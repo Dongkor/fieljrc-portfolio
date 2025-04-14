@@ -1,0 +1,14 @@
+:root {
+    /* colors */
+    --color-bg: #121212;
+    --color-surface: #1B1B1B;
+    --color-text: #E0E0E0;
+    --color-border: #2E2E2E;
+    --color-primary: #4AD991;
+    --color-secondary: #88A9FF;
+
+    /* fonts */
+    --font-SpecialGothicOne: "Special Gothic Expanded One";
+    --font-SpecialGothic: "Special Gothic";
+    --font-WorkSans: "Work Sans"
+}
