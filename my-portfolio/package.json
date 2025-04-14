@@ -14,7 +14,8 @@
     "@fontsource/special-gothic": "^5.2.1",
     "@fontsource/special-gothic-expanded-one": "^5.2.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
