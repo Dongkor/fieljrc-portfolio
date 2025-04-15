@@ -1,0 +1,126 @@
+@import "../../vars.css";
+
+.aboutContainer {
+    display: flex;
+    color: var(--color-text);
+    background: rgba(29, 29, 29, 0.75);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.50);
+    z-index: 3;
+    margin: 12px 15%;
+    padding: 48px 32px;
+}
+
+.sideTitle {
+    width: 50%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+}
+
+.sideTitle span {
+    color: var(--color-primary);
+}
+
+.sideTitle h1 {
+    font-size: 124px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    z-index: 4;
+    gap: 40px;
+}
+
+.body p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 4;
+    font-family: var(--font-body);
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    padding: 48px 32px;
+    margin: 12px 10%;
+    z-index: 3;
+}
+
+.skillsTitle {
+    font-size: 32px;
+    font-weight: 550;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap: 32px;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    background-color: rgba(29, 29, 29, 0.8);
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+    width: 308px;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+.skillContent {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.imgContainer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.titleContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+}
+
+.imgContainer img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.titleContainer p {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text);
+}

@@ -2,9 +2,10 @@
 
 .navbar {
     padding: 16px 0;
-    z-index: 2;
+    z-index: 20;
     position: sticky;
     top: 0;
+    background-color: rgba(20, 20, 20, 0.9);
     /* background-color: var(--color-secondary); */
 }
 
@@ -55,10 +56,18 @@
     transition: color 0.2s ease;
     font-family: var(--font-body);
     font-weight: 600;
+    padding-bottom: 4px;
 }
 
 .menuItems li a:hover {
     color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.activeLink {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 /* === Responsive === */
