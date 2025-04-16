@@ -1,14 +1,15 @@
 @import "../../vars.css";
 
+
 .aboutContainer {
     display: flex;
     color: var(--color-text);
     background: rgba(29, 29, 29, 0.75);
     padding: 32px;
-    border-radius: 10px;
+    border-radius: 32px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.50);
-    z-index: 3;
-    margin: 12px 15%;
+    z-index: 10;
+    margin: 12px 10%;
     padding: 48px 32px;
 }
 
@@ -17,13 +18,17 @@
     z-index: 4;
     display: flex;
     align-items: center;
+    -webkit-text-stroke: 1px var(--color-text);
+    color: transparent;
 }
 
 .sideTitle span {
-    color: var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: transparent;
 }
 
 .sideTitle h1 {
+    padding-left: 32px;
     font-size: 124px;
 }
 
@@ -45,6 +50,8 @@
     font-family: var(--font-body);
 }
 
+
+
 .skillsContainer {
     display: flex;
     flex-direction: column;
@@ -55,12 +62,16 @@
 }
 
 .skillsTitle {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 550;
     letter-spacing: 1.75px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    text-align: center;
+    text-align: right;
+}
+
+.skillsTitle span {
+    color: var(--color-primary);
 }
 
 .skills {
@@ -68,18 +79,18 @@
     flex-wrap: wrap;
     margin-top: 24px;
     gap: 32px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .skill {
     display: flex;
     align-items: center;
-    background-color: rgba(29, 29, 29, 0.8);
+    background-color: rgba(29, 29, 29);
     padding: 16px 24px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
     transition: transform 0.2s ease;
-    width: 308px;
+    width: 300px;
 }
 
 .skill:hover {
@@ -123,4 +134,47 @@
     font-size: 20px;
     font-weight: 500;
     color: var(--color-text);
+}
+
+@media screen and (max-width: 1600px) {
+    .sideTitle h1 {
+        padding-left: 32px;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .aboutContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+
+    .sideTitle {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sideTitle h1 {
+        padding-left: 0px;
+    }
+
+    .body {
+        width: 80%;
+    }
+
+    .skill {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .sideTitle h1 {
+        font-size: 80px;
+    }
+
+    .skill {
+        width: 200px;
+    }
 }

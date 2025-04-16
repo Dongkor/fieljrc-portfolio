@@ -13,9 +13,11 @@
     "@fontsource-variable/work-sans": "^5.2.5",
     "@fontsource/special-gothic": "^5.2.1",
     "@fontsource/special-gothic-expanded-one": "^5.2.1",
+    "motion": "^12.7.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "react-parallax-tilt": "^1.7.291",
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {

@@ -1,0 +1,51 @@
+@import "../../vars.css";
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    margin: 0 10%;
+    z-index: 3;
+    /* background-color: aqua; */
+}
+
+.projectsTitle {
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.projectsTitle span {
+    color: var(--color-primary);
+}
+
+.projects {
+    margin: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-items: center;
+
+}
+
+@media screen and (max-width: 1800px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
