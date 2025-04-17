@@ -38,7 +38,7 @@ const Navbar = () => {
             }}>
             <div className={styles.content}>
                 <a href='/' className={styles.title}>
-                    DONG<span className={styles.titleSpan}>KOR.</span>
+                    FIEL <span className={styles.titleSpan}>JR.</span>
                 </a>
                 <div className={styles.menu}>
                     <IoMenu
