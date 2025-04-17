@@ -19,7 +19,6 @@ const itemVariants = {
 };
 
 const About = () => {
-    const BASE_URL = import.meta.env.BASE_URL;
     const { scrollY } = useScroll()
     const [pageY, setPageY] = useState(0);
 
@@ -85,7 +84,7 @@ const About = () => {
                         >
                             <div className={styles.skillContent}>
                                 <div className={styles.imgContainer}>
-                                    <img src={`${BASE_URL}/assets/${skill.imgSrc}`} alt={skill.title} />
+                                    <img src={`../../../assets/${skill.imgSrc}`} alt={skill.title} />
                                 </div>
                                 <div className={styles.titleContainer}>
                                     <p className={styles.skillLogo}>{skill.title}</p>

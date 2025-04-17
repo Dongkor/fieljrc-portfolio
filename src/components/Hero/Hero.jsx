@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./Hero.module.css"
-import hero from "/assets/hero/profile.png"
 
 
 const Hero = () => {
 
     const BASE_URL = import.meta.env.BASE_URL;
-    // console.log(hero, BASE_URL)
+
     return (
         <>
             <section className={styles.container} id='home'>
@@ -34,7 +33,7 @@ const Hero = () => {
                     </ul>
                 </div>
                 <div className={styles.heroImg}>
-                    <img src={hero} alt="hero" />
+                    <img src={BASE_URL + "assets/hero/profile.png"} alt="hero" />
                 </div>
 
 
