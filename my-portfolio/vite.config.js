@@ -8,6 +8,5 @@ export default defineConfig({
     modules: {
       localsConvention: "camelCase"
     }
-  },
-  base: "/fieljrc-portfolio"
+  }
 })
