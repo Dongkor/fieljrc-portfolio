@@ -5,11 +5,11 @@
     --color-surface: rgb(31, 31, 31);
     --color-secondary: #3A3A3A;
     --color-border: #2A2A2A;
-    --color-text: #F5F5F5;
+    --color-text: rgb(245, 245, 245);
     --color-subtext: #AAAAAA;
     --color-primary: rgb(255, 70, 85);
     --color-ui-1: #171717;
-    --color-ui-2: #212121;
+    --color-ui-2: rgb(33, 33, 33);
 
     /* fonts */
     --font-display: "Special Gothic Expanded One", sans-serif;

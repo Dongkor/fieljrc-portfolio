@@ -6,7 +6,16 @@
     position: sticky;
     top: 0;
     background-color: rgba(33, 33, 33, 0.8);
-    /* background-color: var(--color-secondary); */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbarHidden {
+    padding: 16px 0;
+    z-index: 20;
+    position: sticky;
+    top: 10;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content {
@@ -21,14 +30,18 @@
 /* === Title === */
 .title {
     font-family: var(--font-display);
-    font-size: 40px;
+    letter-spacing: 1.75px;
+    font-size: 32px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-text);
+    -webkit-text-stroke: 1px var(--color-text);
+    color: transparent;
+    font-style: italic;
 }
 
 .titleSpan {
-    color: var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: transparent;
 }
 
 /* === Hamburger === */

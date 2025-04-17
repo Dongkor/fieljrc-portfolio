@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./Hero.module.css"
 
 
@@ -8,7 +8,6 @@ const Hero = () => {
 
     return (
         <>
-            <rippleCirc />
             <section className={styles.container} id='home'>
                 <div className={styles.content}>
                     <h3 className={styles.subTitle}>Hey, I’m</h3>
@@ -27,14 +26,14 @@ const Hero = () => {
                         <li>
                             <a href="https://www.linkedin.com/in/fiel-jr-condor-625855334"><FaLinkedin /></a>
                         </li>
+                        <li>
+                            <a href="https://github.com/Dongkor"><FaGithub /></a>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.heroImg}>
                     <img src="/profile.png" alt="hero" />
                 </div>
-
-                <div className={styles.topBlur} />
-                <div className={styles.btmBlur} />
 
 
             </section>

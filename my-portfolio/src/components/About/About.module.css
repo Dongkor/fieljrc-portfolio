@@ -20,6 +20,7 @@
     align-items: center;
     -webkit-text-stroke: 1px var(--color-text);
     color: transparent;
+    font-style: italic;
 }
 
 .sideTitle span {
@@ -68,10 +69,14 @@
     text-transform: uppercase;
     margin-bottom: 24px;
     text-align: right;
+    -webkit-text-stroke: 1px var(--color-text);
+    color: transparent;
+    font-style: italic;
 }
 
 .skillsTitle span {
-    color: var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: transparent;
 }
 
 .skills {

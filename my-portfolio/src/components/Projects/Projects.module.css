@@ -16,10 +16,14 @@
     text-transform: uppercase;
     margin-bottom: 24px;
     text-align: right;
+    -webkit-text-stroke: 1px var(--color-text);
+    color: transparent;
+    font-style: italic;
 }
 
 .projectsTitle span {
-    color: var(--color-primary);
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: transparent;
 }
 
 .projects {
