@@ -12,7 +12,6 @@ const Navbar = () => {
 
     const handleSetActive = (to) => {
         setActiveSection(to)
-        console.log(activeSection)
     };
 
     useMotionValueEvent(scrollY, "change", (latest) => {
@@ -26,7 +25,6 @@ const Navbar = () => {
         else if (pageY < 100) {
             setActiveSection(null)
         }
-        console.log(activeSection, scrollYProgress.current)
     });
     return (
         <motion.nav
