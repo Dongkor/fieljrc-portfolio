@@ -7,7 +7,7 @@ import hero from "/assets/hero/profile.png"
 const Hero = () => {
 
     const BASE_URL = import.meta.env.BASE_URL;
-    console.log(hero, BASE_URL)
+    // console.log(hero, BASE_URL)
     return (
         <>
             <section className={styles.container} id='home'>
