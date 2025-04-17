@@ -5,7 +5,6 @@ import styles from "./Hero.module.css"
 
 const Hero = () => {
 
-
     return (
         <>
             <section className={styles.container} id='home'>
@@ -32,7 +31,7 @@ const Hero = () => {
                     </ul>
                 </div>
                 <div className={styles.heroImg}>
-                    <img src="/profile.png" alt="hero" />
+                    <img src="../../../assets/hero/profile.png" alt="hero" />
                 </div>
 
 

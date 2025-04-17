@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
             className={styles.project}
         >
             <div className={styles.imgContainer}>
-                <img src={project.img} alt={project.name} className={styles.imgProj} />
+                <img src={`../../../assets/${project.img}`} alt={project.name} className={styles.imgProj} />
             </div>
             <div className={styles.projectContent}>
                 <h3 className={styles.projectName}>{project.name}</h3>
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
                             return (
                                 <li key={id} className={styles.tech}>
                                     {/* {"./skills/" + tech.toLowerCase().replace(' ', '')} */}
-                                    <img src={"./skills/" + tech.toLowerCase().replace(' ', '') + ".png"} alt={tech} />
+                                    <img src={"../../../assets/skills/" + tech.toLowerCase().replace(' ', '') + ".png"} alt={tech} />
                                 </li>
                             )
 

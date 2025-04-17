@@ -84,7 +84,7 @@ const About = () => {
                         >
                             <div className={styles.skillContent}>
                                 <div className={styles.imgContainer}>
-                                    <img src={skill.imgSrc} alt={skill.title} />
+                                    <img src={`../../../assets/${skill.imgSrc}`} alt={skill.title} />
                                 </div>
                                 <div className={styles.titleContainer}>
                                     <p className={styles.skillLogo}>{skill.title}</p>
