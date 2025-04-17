@@ -5,6 +5,8 @@ import styles from "./Hero.module.css"
 
 const Hero = () => {
 
+    const BASE_URL = import.meta.env.BASE_URL;
+
     return (
         <>
             <section className={styles.container} id='home'>
@@ -31,7 +33,7 @@ const Hero = () => {
                     </ul>
                 </div>
                 <div className={styles.heroImg}>
-                    <img src="../../../assets/hero/profile.png" alt="hero" />
+                    <img src={BASE_URL + "assets/hero/profile.png"} alt="hero" />
                 </div>
 
 
