@@ -1,0 +1,38 @@
+:root {
+    /* colors */
+    --color-bg: #0E0E0E;
+    /* --color-bg: white; */
+    --color-surface: rgb(31, 31, 31);
+    --color-secondary: #3A3A3A;
+    --color-border: #2A2A2A;
+    --color-text: rgb(245, 245, 245);
+    --color-subtext: #AAAAAA;
+    --color-primary: rgb(255, 70, 85);
+    --color-ui-1: #171717;
+    --color-ui-2: rgb(33, 33, 33);
+
+    /* fonts */
+    --font-display: "Special Gothic Expanded One", sans-serif;
+    --font-heading: "Special Gothic", sans-serif;
+    --font-body: "Work Sans Variable", sans-serif;
+
+    /* polygon */
+    --transition: all 0.4s ease-in-out;
+    --color-primary-rgb: 37, 99, 235;
+    --card-rgb: 180, 185, 188;
+    --card-border-rgb: 131, 134, 135;
+    --border-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+        /* shadow ring 👇 */
+        0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */
+        0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+        0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    --card-primary-shadow: var(--border-shadow),
+        0 0 30px rgba(var(--color-primary), 0.03);
+    --polygon: polygon(0 0,
+            calc(100% - 50px) 0%,
+            100% 50px,
+            100% 100%,
+            50px 100%,
+            0 calc(100% - 50px));
+}

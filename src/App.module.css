@@ -1,0 +1,17 @@
+@import "./vars.css";
+
+.App {
+    background-color: var(--color-ui-1);
+    width: 100%;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    overflow-x: hidden;
+}

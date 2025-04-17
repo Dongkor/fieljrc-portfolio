@@ -9,5 +9,5 @@ export default defineConfig({
       localsConvention: "camelCase"
     }
   },
-  base: "/fieljrc-portfolio/my-portfolio"
+  base: "/fieljrc-portfolio"
 })
