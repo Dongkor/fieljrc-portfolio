@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 
+my-porfolio
 .env
 
 # Editor directories and files
