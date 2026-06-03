@@ -5,6 +5,7 @@
         "description": "Multi-agent AI system for fragmented disaster data. Offline 5-agent RAG pipeline (routing, SQL, semantic, visualization, synthesis) over 23,687 chunks and a geospatial DB. Applied to the 2025 Bogo City Earthquake. Evaluated vs single-agent baseline on 40 queries via RAGAS — multi-agent answered all, baseline refused most. Adapted from Hu et al. 2025 maritime framework.",
         "stack": ["Python", "LangGraph", "Qdrant", "Ollama", "Qwen2.5-7B (4-bit)", "RAGAS"],
         "category": "AI / ML",
+        "url": "https://github.com/Dongkor/geoagent-disaster-response",
         "img": "./projects/image.png"
     },
     {

@@ -2,6 +2,7 @@ import styles from './ProjectCard.module.css'
 
 const ProjectCard = ({ project }) => {
     const isLink = Boolean(project.url)
+    const isGitHub = isLink && project.url.includes('github.com')
     const Tag = isLink ? 'a' : 'div'
     const linkProps = isLink
         ? { href: project.url, target: '_blank', rel: 'noopener noreferrer' }
@@ -12,7 +13,7 @@ const ProjectCard = ({ project }) => {
             <div className={styles.cardTop}>
                 <div className={styles.meta}>
                     <span className={styles.category}>{project.category}</span>
-                    {isLink && <span className={styles.live}>Live ↗</span>}
+                    {isLink && <span className={styles.live}>{isGitHub ? 'GitHub ↗' : 'Live ↗'}</span>}
                 </div>
                 <h3 className={styles.name}>{project.name}</h3>
                 <p className={styles.subtitle}>{project.subtitle}</p>
