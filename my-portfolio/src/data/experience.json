@@ -1,0 +1,43 @@
+[
+    {
+        "company": "Sir Chan's TLE Tambayan",
+        "role": "Full-Stack Developer",
+        "type": "Contract",
+        "period": "Aug 2025 – Apr 2026",
+        "location": "Cebu, PH",
+        "url": "https://sirchanstletambayan.com/",
+        "bullets": [
+            "Built a specialized LMS with Next.js, TypeScript, and Supabase SSR.",
+            "Implemented RBAC separating teacher and student dashboards.",
+            "Integrated Supabase Storage and real-time DB sync for curriculum delivery and instant student progress updates.",
+            "Responsive UI with Tailwind CSS and shadcn/ui. SEO-optimized via SSR."
+        ],
+        "stack": ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "shadcn/ui"]
+    },
+    {
+        "company": "Apexel Development",
+        "role": "Mobile Developer",
+        "type": "Contract",
+        "period": "Apr – Jul 2025",
+        "location": "Remote",
+        "bullets": [
+            "Built cross-platform mobile MVP for international client in React Native and Supabase.",
+            "Delivered in time for investor demos.",
+            "Architected real-time data flows, offline-first schema, and secure auth.",
+            "Prototyped in Figma."
+        ],
+        "stack": ["React Native", "Supabase", "Figma"]
+    },
+    {
+        "company": "Alliance Software Inc.",
+        "role": "Software Engineer Intern",
+        "type": "Internship",
+        "period": "Jun – Jul 2025",
+        "location": "Cebu, PH",
+        "bullets": [
+            "Built SkillStacker — a C# admin web app with CRUD for users and training modules.",
+            "Developed and delivered within Alliance's enterprise SDLC as part of the Summer Bridge internship program."
+        ],
+        "stack": ["C#", "ASP.NET", "SQL"]
+    }
+]

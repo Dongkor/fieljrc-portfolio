@@ -8,7 +8,7 @@
         "imgSrc": "skills/c-cpp.png"
     },
     {
-        "title": "ReactJS",
+        "title": "React/React Native",
         "imgSrc": "skills/reactjs.png"
     },
     {
@@ -18,6 +18,10 @@
     {
         "title": "CSS",
         "imgSrc": "skills/css.png"
+    },
+    {
+        "title": "Javascript",
+        "imgSrc": "skills/javascript.png"
     },
     {
         "title": "Node",
@@ -32,19 +36,15 @@
         "imgSrc": "skills/mysql.png"
     },
     {
-        "title": "React Native",
-        "imgSrc": "skills/reactnative.png"
-    },
-    {
-        "title": "Tauri",
-        "imgSrc": "skills/tauri.png"
-    },
-    {
         "title": "MongoDB",
         "imgSrc": "skills/mongodb.png"
     },
     {
         "title": "Supabase",
         "imgSrc": "skills/supabase.png"
+    },    
+    {
+        "title": "Tauri",
+        "imgSrc": "skills/tauri.png"
     }
 ]

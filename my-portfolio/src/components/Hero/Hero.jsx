@@ -1,45 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import { FaGithub, FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
-import styles from "./Hero.module.css"
-
+import styles from './Hero.module.css'
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 
 const Hero = () => {
-
-
     return (
-        <>
-            <section className={styles.container} id='home'>
+        <section className={styles.hero} id="home">
+            <div className={styles.grid} aria-hidden="true" />
+            <div className={styles.inner}>
                 <div className={styles.content}>
-                    <h3 className={styles.subTitle}>Hey, I’m</h3>
-                    <h1 className={styles.title}> Fiel Jr. <span>Condor</span></h1>
-                    <p className={styles.description}>Welcome to my space.</p>
-                    <h1 className={styles.title}>
-
-                    </h1>
-                    <ul className={styles.socials}>
-                        <li>
-                            <a href="https://www.facebook.com/fieljr.condor/"><FaFacebookSquare /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/dongkor_/"><FaInstagram /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/fiel-jr-condor-625855334"><FaLinkedin /></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Dongkor"><FaGithub /></a>
-                        </li>
-                    </ul>
+                    <div className={styles.tag}>
+                        <span className={styles.dot} />
+                        Available for opportunities
+                    </div>
+                    <h1 className={styles.name}>Fiel Jr. E. Condor</h1>
+                    <p className={styles.role}>Full-Stack Developer &amp; AI/ML Engineer</p>
+                    <p className={styles.bio}>
+                        BS Computer Science · University of the Philippines Cebu<br />
+                        {/* Building full-stack systems and ML pipelines from concept to deployment. */}
+                    </p>
+                    <div className={styles.ctas}>
+                        <a href="#projects" className={styles.ctaPrimary}>View Projects</a>
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.ctaSecondary}
+                        >
+                            Download Resume
+                        </a>
+                    </div>
+                    {/* <div className={styles.socials}>
+                        <a
+                            href="https://github.com/Dongkor"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            className={styles.socialLink}
+                        >
+                            <FiGithub size={20} />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/fiel-jr-condor"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            className={styles.socialLink}
+                        >
+                            <FiLinkedin size={20} />
+                        </a>
+                        <a
+                            href="mailto:fieljrc@gmail.com"
+                            aria-label="Email"
+                            className={styles.socialLink}
+                        >
+                            <FiMail size={20} />
+                        </a>
+                    </div> */}
                 </div>
-                <div className={styles.heroImg}>
-                    <img src="/profile.png" alt="hero" />
+                <div className={styles.imgWrapper}>
+                    <img src="/IMG_0758.JPG" alt="Fiel Jr. E. Condor" className={styles.profileImg} />
                 </div>
-
-
-            </section>
-
-        </>
-
+            </div>
+        </section>
     )
 }
 

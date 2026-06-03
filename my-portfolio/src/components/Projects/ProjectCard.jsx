@@ -1,45 +1,29 @@
-import React from 'react'
 import styles from './ProjectCard.module.css'
-import Tilt from 'react-parallax-tilt';
 
 const ProjectCard = ({ project }) => {
+    const isLink = Boolean(project.url)
+    const Tag = isLink ? 'a' : 'div'
+    const linkProps = isLink
+        ? { href: project.url, target: '_blank', rel: 'noopener noreferrer' }
+        : {}
 
     return (
-        <Tilt
-            tiltMaxAngleX={17}
-            tiltMaxAngleY={17}
-            glareEnable={false}
-            glareMaxOpacity={0.05}
-            scale={1.0}
-            transitionSpeed={400}
-            className={styles.project}
-        >
-            <div className={styles.imgContainer}>
-                <img src={project.img} alt={project.name} className={styles.imgProj} />
-            </div>
-            <div className={styles.projectContent}>
-                <h3 className={styles.projectName}>{project.name}</h3>
-                <p className={styles.projectDesc}>{project.description}</p>
-
-                <ul className={styles.tech_stack}>
-                    {
-                        project.tech_stack.map((tech, id) => {
-                            return (
-                                <li key={id} className={styles.tech}>
-                                    {/* {"./skills/" + tech.toLowerCase().replace(' ', '')} */}
-                                    <img src={"./skills/" + tech.toLowerCase().replace(' ', '') + ".png"} alt={tech} />
-                                </li>
-                            )
-
-                        })
-                    }
-                </ul>
-                <div className={styles.status}>
-                    <div className={styles[project.status]}>{project.status.replace('_', ' ')}</div>
+        <Tag {...linkProps} className={`${styles.card} ${isLink ? styles.clickable : ''}`}>
+            <div className={styles.cardTop}>
+                <div className={styles.meta}>
+                    <span className={styles.category}>{project.category}</span>
+                    {isLink && <span className={styles.live}>Live ↗</span>}
                 </div>
-
+                <h3 className={styles.name}>{project.name}</h3>
+                <p className={styles.subtitle}>{project.subtitle}</p>
             </div>
-        </Tilt>
+            <p className={styles.desc}>{project.description}</p>
+            <div className={styles.stack}>
+                {project.stack.map((tech) => (
+                    <span key={tech} className={styles.tag}>{tech}</span>
+                ))}
+            </div>
+        </Tag>
     )
 }
 

@@ -5,9 +5,9 @@ import { FaGithub, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Contacts = () => {
     return (
-        <section id='contact' className={styles.container}>
+        <section id='contact' className={styles.section}>
             <div className={styles.titleContainer}>
-                <h1>FIEL<span className={styles.titleSpan}> JR.</span> PORTFOLIO</h1>
+                <h1><span className={styles.titleSpan}>FIEL JR.</span> PORTFOLIO</h1>
             </div>
             <div className={styles.socialsContainer}>
                 <ul className={styles.socials}>

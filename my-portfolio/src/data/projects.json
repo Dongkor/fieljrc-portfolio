@@ -1,61 +1,28 @@
 [
     {
-        "name": "PawHuway",
-        "description": "A pet healthcare tracker app with versions for veterinarians and pet owners.",
-        "tech_stack": [
-            "React Native",
-            "Supabase"
-        ],
-        "status": "In_Progress",
-        "img": "./projects/pawhuway.png"
+        "name": "GeoAgent",
+        "subtitle": "Undergraduate Thesis",
+        "description": "Multi-agent AI system for fragmented disaster data. Offline 5-agent RAG pipeline (routing, SQL, semantic, visualization, synthesis) over 23,687 chunks and a geospatial DB. Applied to the 2025 Bogo City Earthquake. Evaluated vs single-agent baseline on 40 queries via RAGAS — multi-agent answered all, baseline refused most. Adapted from Hu et al. 2025 maritime framework.",
+        "stack": ["Python", "LangGraph", "Qdrant", "Ollama", "Qwen2.5-7B (4-bit)", "RAGAS"],
+        "category": "AI / ML",
+        "img": "./projects/image.png"
     },
     {
-        "name": "SyntaxHub",
-        "description": "A lightweight IDE built with Tauri that supports a custom programming language.",
-        "tech_stack": [
-            "Tauri",
-            "Python",
-            "JavaScript",
-            "Reactjs"
-        ],
-        "status": "Completed",
-        "img": "./projects/syntaxhub.png"
+        "name": "Sir Chan's TLE Tambayan",
+        "subtitle": "Full-Stack LMS",
+        "description": "Specialized Learning Management System with RBAC separating teacher and student dashboards. Cookie-based Supabase SSR sessions, real-time DB sync, Supabase Storage for curriculum delivery, and SEO-optimized server-side rendering. Built as a contract project (Aug 2025 – Apr 2026).",
+        "stack": ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "shadcn/ui"],
+        "category": "Full-Stack",
+        "url": "https://sirchanstletambayan.com/",
+        "img": "./projects/image.png"
     },
     {
-        "name": "Personal Portfolio",
-        "description": "My personal portfolio website showcasing my projects and technologies used.",
-        "tech_stack": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Reactjs"
-        ],
-        "status": "Completed",
-        "img": "./projects/portfolio.png"
-    },
-    {
-        "name": "Kapyot",
-        "description": "A Cebu jeepney commuter companion that suggests routes and fares based on your destination.",
-        "tech_stack": [
-            "JavaScript",
-            "Reactjs",
-            "MySQL"
-        ],
-        "status": "Inactive",
-        "img": "./projects/kapyot.png"
-    },
-    {
-        "name": "The Nook",
-        "description": "A community website that showcases coworking spaces in Cebu.",
-        "tech_stack": [
-            "HTML",
-            "CSS",
-            "Reactjs",
-            "Node",
-            "Express",
-            "MongoDB"
-        ],
-        "status": "Inactive",
+        "name": "Pagsusi",
+        "subtitle": "ML Research",
+        "description": "Electoral integrity analysis of the 2025 Philippine Senate Elections. Detects and scores voting anomalies across precincts nationwide using unsupervised ML. Classifies flagged precincts by severity: Critical, High, Medium, Low.",
+        "stack": ["Python", "Machine Learning", "Anomaly Detection", "Vercel"],
+        "category": "Machine Learning",
+        "url": "https://pagsusi-ten.vercel.app/",
         "img": "./projects/image.png"
     }
 ]
