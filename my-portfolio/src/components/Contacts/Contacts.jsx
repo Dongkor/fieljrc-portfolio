@@ -26,7 +26,7 @@ const Contacts = () => {
                 </ul>
             </div>
             <div className={styles.copyrightContainer}>
-                <p>© 2025 Condor. All rights reserved.</p>
+                <p>© 2026 Condor. All rights reserved.</p>
             </div>
         </section>
 
